@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="js">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,7 +12,7 @@
     <link rel="preload" href="wallpaper-1080p30.mp4" as="video" type="video/mp4" />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body class="is-loading">
     <div class="background" aria-hidden="true">
       <video class="background__video" autoplay muted loop playsinline preload="metadata">
         <source src="wallpaper-1080p30.mp4" type="video/mp4" />
@@ -21,7 +21,12 @@
       <div class="background__grain"></div>
     </div>
 
-    <main class="site-shell">
+    <div class="page-loader" role="status" aria-live="polite">
+      <div class="page-loader__mark">✦</div>
+      <p>PREPARING THE SPACE</p>
+    </div>
+
+    <main class="site-shell" aria-label="Research homepage">
       <header class="topbar glass">
         <a class="brand" href="#top" aria-label="Back to top">
           <span class="brand__spark">✦</span>
