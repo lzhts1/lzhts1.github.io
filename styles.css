@@ -83,7 +83,7 @@ html.js body.is-ready .page-loader { visibility: hidden; opacity: 0; pointer-eve
   align-items: center;
   justify-content: space-between;
   min-height: 62px;
-  padding: 0 22px;
+  padding: 0 var(--panel-padding);
   border-radius: 18px;
 }
 
