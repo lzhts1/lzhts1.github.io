@@ -115,10 +115,10 @@ h2 { margin: 0; font-size: clamp(2.2rem, 4.7vw, 4.2rem); line-height: 1.02; }
 
 .awards-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 15px; }
 .award-card { display: flex; flex-direction: column; min-height: 248px; padding: 26px; border-radius: 20px; }
-.award-logo { display: block; width: 100%; height: 78px; margin: 0 0 20px; padding: 7px 10px; border: 1px solid rgba(91, 85, 129, 0.2); border-radius: 14px; object-fit: contain; object-position: left center; background: rgba(255, 255, 255, 0.58); }
-.award-logo--icpc { max-width: 172px; }
-.award-logo--lanqiao { max-width: 228px; }
-.award-logo--raicom { max-width: 178px; }
+.award-logo { display: block; width: 94px; height: 94px; margin: 0 0 20px; padding: 11px; border: 2px solid rgba(91, 85, 129, 0.2); border-radius: 50%; object-fit: contain; object-position: center; background: rgba(255, 255, 255, 0.78); }
+.award-logo--icpc { padding: 9px; }
+.award-logo--lanqiao { padding: 10px; }
+.award-logo--raicom { padding: 18px 8px; }
 .award-card__label { margin: 2px 0 8px; color: var(--soft-ink); font-size: 0.65rem; font-weight: 800; letter-spacing: 0.13em; }
 .award-card h3 { margin: 0 0 16px; font-size: clamp(1.2rem, 1.6vw, 1.55rem); line-height: 1.15; }
 .award-card__result { margin: 0 0 17px; color: var(--soft-ink); font-size: 0.95rem; }
