@@ -90,9 +90,9 @@ html.js body.is-ready .page-loader { visibility: hidden; opacity: 0; pointer-eve
 .topbar nav a { opacity: 0.8; transition: opacity 180ms ease; }
 .topbar nav a:hover, .topbar nav a:focus-visible { opacity: 1; }
 
-.hero { display: grid; grid-template-columns: minmax(0, 760px); justify-content: center; min-height: min(690px, calc(100vh - 126px)); padding: 92px 0 64px; align-items: center; }
+.hero { display: grid; grid-template-columns: minmax(0, 1fr); justify-content: stretch; min-height: min(690px, calc(100vh - 126px)); padding: 44px 0 64px; align-items: start; }
 
-.hero__content { padding: clamp(30px, 5vw, 58px); border-radius: 26px; }
+.hero__content { width: 100%; padding: clamp(30px, 5vw, 58px); border-radius: 26px; }
 .eyebrow { display: flex; align-items: center; gap: 9px; margin: 0 0 18px; color: var(--soft-ink); font-size: 0.68rem; font-weight: 800; letter-spacing: 0.15em; }
 .eyebrow span { width: 20px; height: 1px; background: currentColor; }
 
