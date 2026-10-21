@@ -19,18 +19,6 @@ document.addEventListener('visibilitychange', () => {
   }
 });
 
-function waitForVideo() {
-  return new Promise((resolve) => {
-    if (video.readyState >= HTMLMediaElement.HAVE_FUTURE_DATA) {
-      resolve();
-      return;
-    }
-
-    video.addEventListener('canplay', resolve, { once: true });
-    video.addEventListener('error', resolve, { once: true });
-  });
-}
-
 function revealPage() {
   window.requestAnimationFrame(() => {
     page.classList.remove('is-loading');
@@ -38,9 +26,4 @@ function revealPage() {
   });
 }
 
-if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-  revealPage();
-} else {
-  const maximumWait = new Promise((resolve) => window.setTimeout(resolve, 3500));
-  Promise.race([waitForVideo(), maximumWait]).then(revealPage);
-}
+revealPage();
